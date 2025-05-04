@@ -1,0 +1,99 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('election-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #222;
+    transition: background-size 0.5s ease;
+  }
+  
+  body.scrolled {
+    background-size: 110%;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    margin-top: 50px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+  }
+  
+  #candidates {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .candidate {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 45%;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .candidate:hover {
+    transform: scale(1.05);
+    background-color: #dceeff;
+  }
+  
+  .candidate.selected {
+    transform: scale(1.1);
+    background-color: #a3d1ff;
+  }
+  
+  input, button {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #005fa3;
+  }
+  .candidate.selected {
+    transform: scale(1.08);
+    background-color: #b2e3ff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  .refresh {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .refresh button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #00aa88;
+    border-radius: 8px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  .refresh button:hover {
+    background-color: #00997a;
+    transform: scale(1.05);
+  }
+    

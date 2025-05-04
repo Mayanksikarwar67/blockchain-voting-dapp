@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Blockchain Voting System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<script>
+    window.addEventListener('scroll', () => {
+      document.body.classList.toggle('scrolled', window.scrollY > 10);
+    });
+  </script>
+  
+<body>
+  <div class="container">
+    <h1>🗳️ Blockchain Voting System</h1>
+
+    <section class="results">
+      <h2>Candidates</h2>
+      <div id="candidates"></div>
+    </section>
+
+    <section class="refresh">
+      <button onclick="loadCandidates()">🔄 Refresh Results</button>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

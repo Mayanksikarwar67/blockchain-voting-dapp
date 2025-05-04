@@ -1,0 +1,26 @@
+{
+    "name": "blockchain-voting-dapp",
+    "version": "1.0.0",
+    "description": "A blockchain-based voting system built using Solidity, Web3.js, Truffle, and Ganache.",
+    "main": "app.js",
+    "scripts": {
+      "start": "npx http-server frontend",
+      "migrate": "truffle migrate --network development"
+    },
+    "keywords": [
+      "blockchain",
+      "voting",
+      "ethereum",
+      "solidity",
+      "web3",
+      "dapp"
+    ],
+    "author": "Mayank Sikarwar",
+    "license": "MIT",
+    "dependencies": {
+      "ganache": "^7.9.2",
+      "truffle": "^5.11.5",
+      "web3": "^1.10.0"
+    }
+  }
+  
